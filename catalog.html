@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Мозаика</title>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/uikit.min.js" ></script>
+	<script src="./js/core/grid.min.js" ></script>
+	<script src="./js/components/slideshow.min.js" ></script>
+	<script src="./js/components/slideshow-fx.min.js" ></script>
+	<script src="./js/components/sticky.min.js" ></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script src="./bower_components/jquery.form-styler/jquery.formstyler.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="./bower_components/jquery.form-styler/jquery.formstyler.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" href="./css/catalog.css">
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="uk-navbar uk-position-zр-index header" data-uk-sticky>
+		<div class="uk-container header_container">
+			<a class="uk-navbar-brand header_logo-link" href="#" data-uk-smooth-scroll>
+				<img class="header_logo-image" src="./images/Logo-header.jpg" alt="logo-header">
+				<img class="header_logo-image header_logo-image__small" src="./images/logo-header-small.png" alt="logo-header">
+			</a>
+			<div class="uk-navbar-flip header_content-container">
+				<address class="header_phone">
+					8 (926) 714-65-62
+				</address>
+				<ul class="header_social">
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__facebook">fb</a></li>
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__pinterest">fb</a></li>
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__twitter">fb</a></li>
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__youtube">fb</a></li>
+				</ul>
+			</div>
+			<ul class="uk-navbar-nav uk-navbar-center header_menu uk-visible-large">
+				<li class="header_menu-item"><a href="#products" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">products</a></li>
+				<li class="header_menu-item"><a href="#photo-gallery" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">photo gallery</a></li>
+				<li class="header_menu-item"><a href="#about-us" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">about us</a></li>
+				<li class="header_menu-item"><a href="#shipping" class="header_menu-link" >shipping</a></li>
+				<li class="header_menu-item"><a href="#ask-a-question" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">Ask a Question</a></li>
+			</ul>
+			<div id="menu" class="uk-navbar-nav uk-navbar-center header_dropdown-container uk-hidden-large">
+
+				<!-- This is the element toggling the dropdown -->
+				<a href="#" id="togle-menu" class="header_dropdown-togle"><span class="header_dropdown-icon"></span>menu</a>
+
+				<!-- This is the dropdown -->
+				<ul class="header_dropdown-list">
+					<li class="header_dropdown-item"><a href="#products" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">products</a></li>
+					<li class="header_dropdown-item"><a href="#photo-gallery" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">photo gallery</a></li>
+					<li class="header_dropdown-item"><a href="#about-us" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">about us</a></li>
+					<li class="header_dropdown-item"><a href="#shipping" class="header_dropdown-link" >shipping</a></li>
+					<li class="header_dropdown-item"><a href="#ask-a-question" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">Ask a Question</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- /NAVBAR -->
+
+	<!-- breadcrumbs  -->
+	<div class="breadcrumbs">
+		<div class="uk-container breadcrumbs_container">
+			<ul class="breadcrumbs_list">
+				<li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link">home</a></li>
+				<li class="breadcrumbs_item"><span href="#" class="breadcrumbs_text">about us</span></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /breadcrumbs  -->
+	<section class="catalog">
+		<div class="uk-container">
+			<h1 class="catalog_heading">
+				products:
+			</h1>
+			<form action="catalog_sort" method="post" accept-charset="utf-8" class="catalog_sort-form">
+				<label for="sort" class="catalog_sort-heding">categories:</label>
+				<select name="sort" class="catalog_sort-drop">
+					<option value="categories" class="catalog_sort-item">categories</option>
+					<option value="categories" class="catalog_sort-item">categories</option>
+					<option value="categories" class="catalog_sort-item">categories</option>
+					<option value="categories" class="catalog_sort-item">categories</option>
+				</select>
+			</form>
+			<div class="uk-grid catalog_area">
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1">
+					<figure class="catalog_item">
+						<div class="catalog_icon-container"><img class="catalog_icon" src="images/catalog-image.png" alt="catalog-image"></div>
+						<figcaption class="catalog_description">
+							<p class="catalog_description-text">
+								1" x 1/2" diamond shape mirror mosaic tile. 150 pcs
+							</p>
+							<div class="catalog_info-container">
+								<span class="catalog_price">
+									$13.99
+								</span>
+								<a href="#" class="catalog_card-link">details</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<button class="catalog_more-btn">Show more</button>
+		</div>
+	</section>
+
+
+
+	<footer class="footer">
+		<div class="uk-container">
+			<div class="uk-grid footer_row">
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 uk-width-medium-1-3 uk-width-small-1-1 footer_logo-area">
+					<img class="footer_logo" src="./images/Logo-footer.png" alt="logo">
+					<span class="footer_slogan">Зеркальная мозаика от производителя</span>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 uk-width-medium-1-3 uk-push-1-3 uk-width-small-1-1">
+					<address class="footer_phone">
+						8 (926) 714-65-62
+					</address>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 uk-width-medium-1-3 uk-pull-1-3 uk-width-small-1-1 uk-flex uk-flex-center uk-flex-bottom">
+					<ul class="footer_social-list">
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__facebook" href="#">fb</a></li>
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__pinterest" href="#">p</a></li>
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__twitter" href="#">t</a></li>
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__youtube" href="#">youtube</a></li>
+					</ul>
+				</div>
+				<div class="uk-width-1-1">
+					<span class="footer_diviver"></span>
+				</div>
+			</div>
+			<div class="uk-grid">
+				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+					<p class="footer_copy">
+						© 2016 ALL RIGHTS RESERVED? Aleksander Hreben
+					</p>
+				</div>
+				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+					<p class="footer_made-by">Сreated by <a href="#">«VG»</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function(){
+			$('select').styler();
+			var $close = $('#togle-menu,.header_dropdown-link');
+			$close.on("click",function(event) {
+				// event.preventDefault();
+				console.log("KAWABANGA");
+				if($('#menu').hasClass('show')) {
+					$('#menu').removeClass('show');
+				} else {
+					$('#menu').addClass('show');
+				};
+				var href = $(this).attr('href');
+				console.log(href);
+				UIkit.Utils.scrollToElement(UIkit.$(href));
+				setTimeout(function(){},1000);
+			});
+		});
+	</script>
+</body>

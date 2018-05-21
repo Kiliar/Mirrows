@@ -1,0 +1,62 @@
+@import "core.less";
+
+.about {
+	padding: 27px 0 145px 0;
+	&_heading{
+		color: @color-normal;
+		font-family: @font-bold;
+		font-size: 32px;
+		text-transform: uppercase;
+	}
+	&_contacts{
+		color: #030303;
+		font-family: @font-bold;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		&>span{
+			display: block;
+			padding-left: 35px;
+			position: relative;
+			margin: 0;
+			margin-bottom: 32px;
+			&::before {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				content: "";
+				display: inline-block;
+				background-image: url('../images/about-contacts.png');
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	&_phone{
+		&::before {
+			width: 23px;
+			height: 19px;
+			background-position: -5px -5px;
+		}
+	}
+	&_email{
+		&::before {
+			width: 16px;
+			height: 26px;
+			background-position: -64px -5px;
+		}
+	}
+	&_address{
+		&::before {
+			width: 16px;
+			height: 25px;
+			background-position: -38px -5px;
+		}
+	}
+	&_text{
+		color: @color-normal;
+		font-family: @font-normal;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+}

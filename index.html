@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Мозаика</title>
+	<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+	<script src="./js/uikit.min.js" ></script>
+	<script src="./js/core/grid.min.js" ></script>
+	<script src="./js/components/slideshow.min.js" ></script>
+	<script src="./js/components/slideshow-fx.min.js" ></script>
+	<script src="./js/components/sticky.min.js" ></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav class="uk-navbar uk-position-zр-index header" data-uk-sticky>
+		<div class="uk-container header_container">
+			<a class="uk-navbar-brand header_logo-link" href="#" data-uk-smooth-scroll>
+				<img class="header_logo-image" src="./images/Logo-header.jpg" alt="logo-header">
+				<img class="header_logo-image header_logo-image__small" src="./images/logo-header-small.png" alt="logo-header">
+			</a>
+			<div class="uk-navbar-flip header_content-container">
+				<address class="header_phone">
+					8 (926) 714-65-62
+				</address>
+				<ul class="header_social">
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__facebook">fb</a></li>
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__pinterest">fb</a></li>
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__twitter">fb</a></li>
+					<li class="header_social-item"><a href="#" class="header_social-link header_social-link__youtube">fb</a></li>
+				</ul>
+			</div>
+			<ul class="uk-navbar-nav uk-navbar-center header_menu uk-visible-large">
+				<li class="header_menu-item"><a href="#products" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">products</a></li>
+				<li class="header_menu-item"><a href="#photo-gallery" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">photo gallery</a></li>
+				<li class="header_menu-item"><a href="#about-us" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">about us</a></li>
+				<li class="header_menu-item"><a href="#shipping" class="header_menu-link" >shipping</a></li>
+				<li class="header_menu-item"><a href="#ask-a-question" class="header_menu-link" data-uk-smooth-scroll="{offset: 80}">Ask a Question</a></li>
+			</ul>
+			<div id="menu" class="uk-navbar-nav uk-navbar-center header_dropdown-container uk-hidden-large">
+
+				<!-- This is the element toggling the dropdown -->
+				<a href="#" id="togle-menu" class="header_dropdown-togle"><span class="header_dropdown-icon"></span>menu</a>
+
+				<!-- This is the dropdown -->
+				<ul class="header_dropdown-list">
+					<li class="header_dropdown-item"><a href="#products" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">products</a></li>
+					<li class="header_dropdown-item"><a href="#photo-gallery" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">photo gallery</a></li>
+					<li class="header_dropdown-item"><a href="#about-us" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">about us</a></li>
+					<li class="header_dropdown-item"><a href="#shipping" class="header_dropdown-link" >shipping</a></li>
+					<li class="header_dropdown-item"><a href="#ask-a-question" class="header_dropdown-link" data-uk-smooth-scroll="{offset: 80}">Ask a Question</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- /NAVBAR -->
+
+	<!-- SLIDER -->
+	<section  class="uk-height-1-1 big-slider ">
+		<div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true,animation: 'boxes-reverse', duration:300, slices:30}">
+			<ul class="uk-slideshow uk-overlay-active">
+				<li class="big-slider_slide">
+					<img class="big-slider_image" src="./images/big-slide-1.jpg"  alt="big-slide-1">
+					<div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div class="big-slider_text-container">						
+							<h1 class="big-slider_headind">Зеркальная мозаика!</h1>
+							<p class="big-slider_text">компании работает сплоченная команда профессионаловсостоящая из людей, имеющих огромный опыт и специальное</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img class="big-slider_image" src="./images/big-slide-2.png"  alt="big-slide-1">
+					<div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div class="big-slider_text-container">						
+							<h1 class="big-slider_headind">Зеркальная мозаика!</h1>
+							<p class="big-slider_text">компании работает сплоченная команда профессионаловсостоящая из людей, имеющих огромный опыт и специальное</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img class="big-slider_image" src="./images/big-slide-3.png"  alt="big-slide-1">
+					<div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+						<div class="big-slider_text-container">						
+							<h1 class="big-slider_headind">Зеркальная мозаика!</h1>
+							<p class="big-slider_text">компании работает сплоченная команда профессионаловсостоящая из людей, имеющих огромный опыт и специальное</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous big-slider_arow big-slider_arow__left uk-visible-large" data-uk-slideshow-item="previous"></a>
+			<a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next big-slider_arow big-slider_arow__right uk-visible-large" data-uk-slideshow-item="next"></a>
+			<ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom big-slider_pagination">
+				<li data-uk-slideshow-item="0"><a href=""></a></li>
+				<li data-uk-slideshow-item="1"><a href=""></a></li>
+				<li data-uk-slideshow-item="2"><a href=""></a></li>
+			</ul>
+		</div>
+	</section>
+	<!-- /SLIDER -->
+
+
+	<!-- REASONS -->
+	<section class="reasons uk-hidden-small" >
+		<div class="uk-container">
+			<h2 class="reasons_heading">
+				why you should buy from us
+			</h2>
+			<ul class="uk-flex uk-flex-center uk-flex-middle reasons_list">
+				<li class="reasons_item reasons_item__prices" data-uk-toggle="{target:'#reasons_modal-1', animation:'uk-animation-scale-up,uk-animation-scale-up'}">
+					<div class="reasons_item-heading" >Acceptable prices</div>
+					<div id="reasons_modal-1" class="uk-hidden reasons_modal" >
+						<div class=" reasons_modal-content">
+							<h2 class="reasons_modal-heading">own production</h2>
+							<p class="reasons_modal-text">В компании работает сплоченная команда профессионалов, состоящая из людей, имеющих огромный опыт и специальное образование. Мы не являемся мастерами широкого профиля. Каждый сотрудник идеально знает свою работу и делает ее очень точно. Высокая ответственность и дисциплинированность являются теми составляющими, которые отвечают за своевременное выполнение работы. Подход к клиенту сугубо индивидуален.</p>
+							<a href="#" class="uk-modal-close uk-close reasons_modal-close" ></a>
+						</div>
+					</div>
+				</li>
+				<li class="reasons_item reasons_item__quality" data-uk-toggle="{target:'#reasons_modal-2', animation:'uk-animation-scale-up,uk-animation-scale-up'}">
+					<div href="#" class="reasons_item-heading" >Acceptable prices</div>
+					<div id="reasons_modal-2" class="uk-hidden reasons_modal">
+						<div class="reasons_modal-content">
+							<h2 class="reasons_modal-heading">own production</h2>
+							<p class="reasons_modal-text">В компании работает сплоченная команда профессионалов, состоящая из людей, имеющих огромный опыт и специальное образование. Мы не являемся мастерами широкого профиля. Каждый сотрудник идеально знает свою работу и делает ее очень точно. Высокая ответственность и дисциплинированность являются теми составляющими, которые отвечают за своевременное выполнение работы. Подход к клиенту сугубо индивидуален.</p>
+							<a href="#" class="uk-modal-close uk-close reasons_modal-close" ></a>
+						</div>
+					</div>
+				</li>
+				<li class="reasons_item reasons_item__production" data-uk-toggle="{target:'#reasons_modal-3', animation:'uk-animation-scale-up,uk-animation-scale-up'}">
+					<div class="reasons_item-heading" >Acceptable prices</div>
+					<div id="reasons_modal-3" class="uk-hidden reasons_modal" >
+						<div class="reasons_modal-content">
+							<h2 class="reasons_modal-heading">own production</h2>
+							<p class="reasons_modal-text">В компании работает сплоченная команда профессионалов, состоящая из людей, имеющих огромный опыт и специальное образование. Мы не являемся мастерами широкого профиля. Каждый сотрудник идеально знает свою работу и делает ее очень точно. Высокая ответственность и дисциплинированность являются теми составляющими, которые отвечают за своевременное выполнение работы. Подход к клиенту сугубо индивидуален.</p>
+							<a href="#" class="uk-modal-close uk-close reasons_modal-close" ></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- /REASONS -->
+
+
+	<!-- CATEGORIES -->
+	<section id="products" class="categories">
+		<div class="uk-container">
+			<h2 class="categories_heading">categories</h2>
+			<ul class="uk-grid uk-grid-large categories_list" >
+				<li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2 categories_item">
+					<a class="categories_link" href="#">
+						<figure class="categories_figure">
+							<div class="categories_image-frame">
+								<img class="categories_image" src="images/cat-image-1.png" alt="cat-image-1">
+							</div>
+							<figcaption class="categories_caption">
+								categories
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2 categories_item">
+					<a class="categories_link" href="#">
+						<figure class="categories_figure">
+							<div class="categories_image-frame">
+								<img class="categories_image" src="images/cat-image-2.png" alt="cat-image-1">
+							</div>
+							<figcaption class="categories_caption">
+								categories
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2 categories_item">
+					<a class="categories_link" href="#">
+						<figure class="categories_figure">
+							<div class="categories_image-frame">
+								<img class="categories_image" src="images/cat-image-3.png" alt="cat-image-1">
+							</div>
+							<figcaption class="categories_caption">
+								categories
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2 categories_item">
+					<a class="categories_link" href="#">
+						<figure class="categories_figure">
+							<div class="categories_image-frame">
+								<img class="categories_image" src="images/cat-image-4.png" alt="cat-image-1">
+							</div>
+							<figcaption class="categories_caption">
+								categories
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2 categories_item">
+					<a class="categories_link" href="#">
+						<figure class="categories_figure">
+							<div class="categories_image-frame">
+								<img class="categories_image" src="images/cat-image-5.png" alt="cat-image-1">
+							</div>
+							<figcaption class="categories_caption">
+								categories
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-2 categories_item">
+					<a class="categories_link" href="#">
+						<figure class="categories_figure">
+							<div class="categories_image-frame">
+								<img class="categories_image" src="images/cat-image-6.png" alt="cat-image-1">
+							</div>
+							<figcaption class="categories_caption">
+								categories
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- /CATEGORIES -->
+
+	<section id="photo-gallery" class="gallery">
+		<div class="uk-container">
+			<h2 class="gallery_heding">
+				Photo gallery
+			</h2>
+			<ul class="gallery_slider" >
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-1.png" alt="gallery-slide-1" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-2.png" alt="gallery-slide-2" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-3.png" alt="gallery-slide-3" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-4.png" alt="gallery-slide-4" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-5.png" alt="gallery-slide-5" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-6.png" alt="gallery-slide-6" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-1.png" alt="gallery-slide-1" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-2.png" alt="gallery-slide-2" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-3.png" alt="gallery-slide-3" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-4.png" alt="gallery-slide-4" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-5.png" alt="gallery-slide-5" class="gallery_slide"></a></li>
+				<li class="gallery_item"><a href="#" class="gallery_link"><img src="./images/gallery-slide-6.png" alt="gallery-slide-6" class="gallery_slide"></a></li>
+			</ul>
+		</div>
+	</section>
+
+
+	<section id="about-us" class="about">
+		<div class="uk-container">
+			<h2 class="about_heading">ABOUT OUR COMPANY</h2>
+			<div class="uk-grid">
+				<div class="uk-width-large-1-2 about_col">	
+					<p class="about_text">
+						В компании работает сплоченная команда профессионалов, состоящая из людей, имеющих огромный опыт и специальное образование. Мы не являемся мастерами широкого профиля. Каждый сотрудник идеально знает свою работу и делает ее очень точно. Высокая ответственность и дисциплинированность являются теми составляющими, которые отвечают за своевременное выполнение работы. Подход к клиенту сугубо индивидуален. Мы не придерживаемся никаких шаблонов. У нас отсутствуют такие понятия, как тяжелая или легкая работа, плохой заказчик или хороший, мы просто получаем задание и выполняем его. Качественно и в срок. Помимо многообещающих слов, мы предоставляем информацию о ранее проведенных работах. Наши объекты без слов продемонстрируют Вам уровень профессионализма. Список клиентов начинается частными и коммерческими структурами, а заканчивается государственными лицами и предприятиями. Мы имеем все необходимые разрешения и лицензии, поэтому можем браться за работу любой степени сложности. Не имеет значения высотность объекта. При помощи опыта и материального оснащения любое здание будет возведено в срок. Работы могут осуществляться в любом городе и поселке по всей территории России. Девиз нашей фирмы – «Быстрота и точность».
+					</p>
+				</div>
+				<div class="uk-width-large-1-2 about_col uk-hidden-small">
+					<ul class="uk-grid about_images-list">
+						<li class="uk-width-1-3 about_images-item"><div class="about_image-container"><img class="about_image" src="./images/about-photo-1.png" alt="about-photo-1"></div></li>
+						<li class="uk-width-1-3 about_images-item"><div class="about_image-container"><img class="about_image" src="./images/about-photo-2.png" alt="about-photo-2"></div></li>
+						<li class="uk-width-1-3 about_images-item"><div class="about_image-container"><img class="about_image" src="./images/about-photo-3.png" alt="about-photo-3"></div></li>
+					</ul>
+					<p class="about_text">
+						Наше материальное оснащение и опыт работы позволяют производить геодезические работы на объектах любой высотности. Для нас нет границ – мы выполняем работы на всей территории Российской Федерации. Вот уже более девяти лет наша компания достойно несёт девиз «Быстрота и точность». В феврале 2008 г. генеральный директор ООО «НАКОР-К» Евгений Иванович Белкин стал кавалером Ордена «Звезда Созидания». Эта первая независимая награда — дань народной признательности предпринимателям, артистам, художникам, политикам за созидательный труд и верность традициям. Лишь немногим более двухсот граждан России получили эту награду с момента ее учреждения в 2000 г. Главный критерий выбора для Попечительского Совета Ордена — весомый вклад в строительство новой России и социальная ответственность.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="ask-a-question" class="contact">
+		<div class="uk-container">
+			<h2 class="contact_heading">Still have questions? Write to us!</h2>
+			<form class="contact_form" action="#" method="post" accept-charset="utf-8">
+				<div class="uk-form-row contact_form-row contact_form-row__inputs">
+					<input placeholder="Neme" type="text" name="name" id="name" class="contact_input">
+					<input placeholder="Phone number" type="tel" name="phone" id="phone" class="contact_input">
+					<input placeholder="E-mail" type="email" name="email" id="email" class="contact_input">
+				</div>
+				<div class="uk-form-row contact_form-row">
+					<textarea name="qwestion-text" class="contact_textarea"></textarea>
+				</div>
+				<div class="uk-form-row contact_form-row">
+					<input type="submit" class="contact_submit" value="send Question">
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="uk-container">
+			<div class="uk-grid footer_row">
+				<div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-1 footer_logo-area">
+					<img class="footer_logo" src="./images/Logo-footer.png" alt="logo">
+					<span class="footer_slogan">Зеркальная мозаика от производителя</span>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-3 uk-push-1-3 uk-width-small-1-1">
+					<address class="footer_phone">
+						8 (926) 714-65-62
+					</address>
+				</div>
+				<div class="uk-width-large-1-3 uk-width-medium-1-3 uk-pull-1-3 uk-width-small-1-1 uk-flex uk-flex-center uk-flex-bottom">
+					<ul class="footer_social-list">
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__facebook" href="#">fb</a></li>
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__pinterest" href="#">p</a></li>
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__twitter" href="#">t</a></li>
+						<li class="footer_social-item"><a class="footer_social-link footer_social-link__youtube" href="#">youtube</a></li>
+					</ul>
+				</div>
+				<div class="uk-width-1-1">
+					<span class="footer_diviver"></span>
+				</div>
+			</div>
+			<div class="uk-grid">
+				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+					<p class="footer_copy">
+						© 2016 ALL RIGHTS RESERVED? Aleksander Hreben
+					</p>
+				</div>
+				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+					<p class="footer_made-by">Сreated by <a href="#">«VG»</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function(){
+			$('.gallery_slider').slick({
+				dots: true,
+				slidesPerRow: 3,
+				rows: 2,
+				responsive: [
+				{
+					breakpoint: 1070,
+					settings: {
+						slidesPerRow: 2,
+						rows: 2,
+						arrows: false,
+					}
+				},{
+					breakpoint: 800,
+					settings: {
+						arrows: false,
+						slidesPerRow: 2,
+						rows: 1,
+					}
+				}
+				]
+			});
+
+			var $close = $('#togle-menu,.header_dropdown-link');
+			$close.on("click",function(event) {
+				// event.preventDefault();
+				console.log("KAWABANGA");
+				if($('#menu').hasClass('show')) {
+					$('#menu').removeClass('show');
+				} else {
+					$('#menu').addClass('show');
+				};
+				var href = $(this).attr('href');
+				console.log(href);
+				UIkit.Utils.scrollToElement(UIkit.$(href));
+				
+			}).delay(100);
+		});
+	</script>
+</body>
+</html>

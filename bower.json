@@ -1,0 +1,21 @@
+{
+  "name": "Mirrows",
+  "authors": [
+    "kiliar <lpfankiliar@gmail.com>"
+  ],
+  "description": "Mirrows WP theme by Kiliar",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^2.27.2"
+  }
+}
